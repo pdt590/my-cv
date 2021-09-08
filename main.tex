@@ -6,46 +6,47 @@
 \bibliography{papers}
 
 % Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
-\def\theme{MidnightBlue}
+\def\theme{black}
 
 % More predefined colors can be found in 
 % https://en.wikibooks.org/wiki/LaTeX/Colors
 
 \usepackage{simplecv}
 
-\boldname{Cetin}{Doruk}{D.}
+\boldname{Thang}{Phan}{P.}
 
 \begin{document}
 
 % Heading
-\headinginline{Doruk Çetin}{
-    Website: \website{dcetin.me} \\ 
-    Email: \email{dcetin@ethz.ch} \\
-    % LinkedIn: \linkedin{doruk-cetin} \\
-    GitHub: \github{dcetin}
-}
-
-% \headingphoto{Doruk Çetin}{
+% \headinginline{Doruk Çetin}{
 %     Website: \website{dcetin.me} \\ 
 %     Email: \email{dcetin@ethz.ch} \\
 %     % LinkedIn: \linkedin{doruk-cetin} \\
 %     GitHub: \github{dcetin}
-% }{photo.png}
+% }
+
+\headingphoto{Phan, Duy Thang}{
+  % Website: \website{dcetin.me} \\
+  Birth: September 05, 1990 \\
+  Email: \email{thangecp@gmail.com} \\
+  LinkedIn: \linkedin{pdt590} \\
+  GitHub: \github{pdt590}
+}{photos/photo-circle.png}
 
 % Page One
 \import{sections/}{education.tex}
 \import{sections/}{experience.tex}
-\import{sections/}{publications.tex}
 
-\pagebreak
+% \pagebreak
 
 % Page Two
-\import{sections/}{teaching.tex}
+% \import{sections/}{teaching.tex}
 \sidebyside
-    {\import{sections/}{skills.tex}}
-    {\import{sections/}{languages.tex}}
+{\import{sections/}{skills.tex}}
+{\import{sections/}{languages.tex}}
 \import{sections/}{projects.tex}
 \import{sections/}{awards.tex}
-\import{sections/}{volunteering.tex}
+\import{sections/}{publications.tex}
+%\import{sections/}{volunteering.tex}
 
 \end{document}
